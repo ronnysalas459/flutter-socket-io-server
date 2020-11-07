@@ -26,9 +26,8 @@
                 console.log('Escuchando', payload);
 
         });
-        socket.on('active-bands', function( bands ) {
-                console.clear;
-                console.table(bands);
+        socket.on('active-bands', function( payload ) {
+                console.log('Listado de Bandas', payload);
 
         });
 
